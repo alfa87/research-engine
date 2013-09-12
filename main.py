@@ -12,6 +12,7 @@ app = webapp2.WSGIApplication([('/', frontend.RootPage),
                                ('/(.+)/', frontend.RemoveTrailingSlash),
                                # Users
                                ('/login', users.LoginPage),
+                               ('/do_login', users.DoLoginPage),
                                ('/logout', users.LogoutPage),
                                ('/signup', users.SignupPage),
                                ('/settings', users.SettingsPage),

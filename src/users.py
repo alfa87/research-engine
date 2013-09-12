@@ -18,6 +18,7 @@ class LoginPage(GenericPage):
         goback = self.request.get('goback')
         self.render("login.html", user = user, goback = goback)
 
+class DoLoginPage(GenericPage):
     def post(self):
         email_or_username = self.request.get('email_or_username')
         password = self.request.get('password')
